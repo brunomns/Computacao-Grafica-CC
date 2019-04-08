@@ -28,11 +28,12 @@ public class ImgBasicOps {
             
         }
         try{
+            //Lê uma imagem em Java...
             File fimage = new File("D:\\imgsAula\\frutas.jpg");
             BufferedImage img = ImageIO.read(fimage);
             
             
-            
+            //cria uma imagem de saída
             BufferedImage outImg = new BufferedImage(img.getWidth(),img.getHeight(),img.getType());
             
             int w = img.getWidth();
@@ -40,6 +41,7 @@ public class ImgBasicOps {
             for (int i = 0; i < w; i++) {
                 for (int j = 0; j < h; j++) {
                     int cRGB = img.getRGB(i, j);
+                    //Le os canais RGB separadamente
                     Color c = new Color(cRGB);
                     int r = c.getRed();
                     int g = c.getGreen();
