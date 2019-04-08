@@ -12,7 +12,8 @@ import javax.imageio.ImageIO;
 
 /**
  *
- * @author bmnso
+ Código que transforma RGB em YCbCr e HSI.
+ * @author Bruno Miguel
  */
 public class ImageBasics {
 
